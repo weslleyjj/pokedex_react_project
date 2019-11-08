@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2,h3,h4,p{
+    margin: 0;
+}
+
+.App {
+    display: flex;  /*Divide as duas telas da pokedex*/
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 400px;
+    padding-left: 10px; /*Espaçamento para as bordas*/
+    margin: 50px auto;
+    background-color: #FE0065;
+    border-radius: 10px;
+    box-shadow: 0 14px 45px rgba(0, 0, 0, 0.22), 0 18px 45px rgba(0, 0, 0, 0.22);
+}
