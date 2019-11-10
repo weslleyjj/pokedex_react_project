@@ -35,5 +35,9 @@
 }
 
 .data-char { /*caracteristicas do pokemon*/
-    font-size: 10px;
+    font-size: 20px;
+}
+
+.detalhes{
+    margin-top: 10px;
 }
