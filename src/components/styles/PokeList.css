@@ -3,7 +3,7 @@
     flex-wrap: wrap; /*Amarra os pokemons dentro da seção de seleção*/
     justify-content: space-around;
     align-items: center;
-    width: 50%; /*Irá compor a outra metade da pokedex*/
+    width: 60%; /*Irá compor a outra metade da pokedex*/
     height: 80%; 
     padding: 10px;
     margin-right: 10px;

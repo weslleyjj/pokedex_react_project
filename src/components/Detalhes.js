@@ -3,11 +3,8 @@ import Pokemon from "../Pokemon";
 
 const Detalhes = (props) => {
     let pokemon;
-    const response = fetch(`http://pokeapi.co/api/v2/pokemon/${props.num}/`);
-    console.log(response);
-    response.json().then(data => {
-        pokemon = new Pokemon(data);
-    });    
+    fetch(`http://pokeapi.co/api/v2/pokemon/${props.num}/`);
+        
     console.log(pokemon.name);
     return (
         <div className="container">
