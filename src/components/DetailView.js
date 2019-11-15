@@ -21,7 +21,7 @@ const DetailView = ({ pokemon }) => {
 			</div>
 			<button
 				type="button"
-				className="btn btn-success detalhes"
+				className="btn btn-success detalhesbtn"
 				onClick={() => {
 					ReactDOM.render(
 						<Detalhes id={id} />,
