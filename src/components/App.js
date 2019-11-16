@@ -22,11 +22,12 @@ class App extends Component {
 				this.setState({ pokemon });
 			})
 			.catch(err => console.log(err));
+		document.getElementById("detalhes").style.display = "none";
 	}
 
 	render() {
 		return (
-			<div className="App">
+			<div id="app" className="App">
 				<PokeList handleOnClick={this.handleOnClick} />
 				<DetailView pokemon={this.state.pokemon} />
 			</div>

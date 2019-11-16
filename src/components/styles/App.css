@@ -1,3 +1,18 @@
+@media only screen and (max-width: 500px) {
+    #app{
+        display: inline-block;  /*Divide as duas telas da pokedex*/
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        height: 400px;
+        padding: 20px;
+        margin: 50px auto;
+        background-color: #FE0065;
+        border-radius: 10px;
+        box-shadow: 0 14px 45px rgba(0, 0, 0, 0.22), 0 18px 45px rgba(0, 0, 0, 0.22);
+    }    
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +20,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 h1,h2,h3,h4,p{
     margin: 0;

@@ -1,4 +1,16 @@
-.detail-view {
+@media only screen and (max-width: 500px) {
+    #detailview {
+        width: 350px;
+        height: 100%;
+        padding: 10px;
+        margin-left: -2px;
+        background-color: #df095e;
+        border-top-right-radius: 10px;        
+        justify-content: center;
+        align-items: center;
+    }
+}
+.Detail-view {
     width: 50%;
     height: 100%;
     padding: 10px;
@@ -39,7 +51,7 @@
     font-size: 20px;
 }
 
-.detalhes{
+.detalhesbtn{
     margin-top: 10px;
 }
 
