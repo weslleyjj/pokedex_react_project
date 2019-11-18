@@ -1,4 +1,4 @@
-
+/* Classe PokemonFull que servirá para utilizar todos os dados necessários para exibição na tela de detalhes avançados */
 class PokemonFull {
     constructor(data) {
       this.id = data.id;
@@ -9,7 +9,7 @@ class PokemonFull {
       this.spritebackshiny = data.sprites.back_shiny;
       this.spriteshiny = data.sprites.front_shiny;
 
-      
+      /*Encontra se o pokemon possui mais de 1 tipo */
       if(data.types.length === 2){
           this.type1 = data.types[0].type.name;
           this.type2 = data.types[1].type.name;
@@ -31,8 +31,9 @@ class PokemonFull {
       }else{
         this.hab1 = data.abilities[0].ability.name;
       }
-       
+      /*Aqui utilizei a função map para atribuir uma string personalizada em cada posição do vetor para exibir os movimentos de luta do pokemon */
       this.moves = data.moves.map(nome => ' ' + nome.move.name + ', ');
+      /*Aqui passo a url específica para o gif do pokemon na tela de detalhes avançados */
       this.spritegif = `http://www.pokestadium.com/sprites/xy/${data.name}.gif`;
     }
   }

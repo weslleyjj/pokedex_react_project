@@ -1,4 +1,5 @@
 @media only screen and (max-width: 500px) {
+    /*Parte responsiva da tela detalhes*/
     #detailview {
         width: 350px;
         height: 100%;
@@ -11,12 +12,13 @@
     }
 }
 .Detail-view {
+    /*Tamanho da caixa da detailview*/
     width: 50%;
     height: 100%;
     padding: 10px;
     background-color: #df095e;
     border-top-right-radius: 10px;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: center;
 }
@@ -32,6 +34,7 @@
 }
 
 .data-wrapper {
+    /*Personalização da fonte na caixa de detail view*/
     width: 80%;
     height: 160px;
     padding: 10px;
@@ -52,6 +55,7 @@
 }
 
 .detalhesbtn{
+    /*Afastamento do botão "Mais detalhes" da caixa de informações*/
     margin-top: 10px;
 }
 

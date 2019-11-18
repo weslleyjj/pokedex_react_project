@@ -1,3 +1,5 @@
+/*Arquivo utilizado para atribuir os sprites corretamente nas celulas de exibição do pokemon*/
+
 export const pokeClasses = [
   {
     id: "1",

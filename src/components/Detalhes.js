@@ -33,6 +33,7 @@ class Detalhes extends React.Component {
 		this.carregarPokemon();
 		
 	}
+	/*função para passar a classe css correta para apresentar o tipo do pokemon nas cores certas */
 	identificarTipo(tipo){
 		return (tipo === "normal" ? "normal" : 
 		tipo === "fire" ? "fire" : 
@@ -52,10 +53,11 @@ class Detalhes extends React.Component {
 		tipo === "dark" ? "dark" : 
 		tipo === "steel" ? "steel" : 
 		tipo === "fairy" ? "fairy" : "");
+		/*uso do if ternário para melhor escrita do código  */
 
 	}
 	render() {
-		
+		/*condicional feito para interromper um loop infinito de renderizações */
 		if (this.props.id !== this.state.id) {
 			this.componentDidMount();
 								
@@ -69,6 +71,7 @@ class Detalhes extends React.Component {
 					<br/>
 					<img src={this.state.poke.spritegif} className="sprite" alt={this.state.poke.sprite}></img>
 					<div className="mt-5 mb-3 d-flex text-uppercase">
+						{/*O uso do concat é para unir as classes css e bootstrap para exibir os tipos do pokemon */}
 						<p className={"ml-3 badge badge-pill ".concat(this.identificarTipo(this.state.poke.type1))} > {this.state.poke.type1} </p>
 						<p className={"ml-1 badge badge-pill ".concat(this.identificarTipo(this.state.poke.type2))} > {this.state.poke.type2} </p>	 
 					</div>

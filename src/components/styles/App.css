@@ -1,4 +1,5 @@
 @media only screen and (max-width: 500px) {
+    /*Setor para tratar da parte responsiva da pokedex*/
     #app{
         display: inline-block;  /*Divide as duas telas da pokedex*/
         align-items: center;

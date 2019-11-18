@@ -4,6 +4,7 @@
 .sprites-shiny{
     width: 30%;
 }
+/*classes base para determinar o tamanho da progress bar do bootstrap*/
 .basebaixa {
     width:25%;
 }
@@ -28,9 +29,10 @@
     height: 350px;
     padding: 30px;
     border-radius: 10px;
-    overflow: auto;
+    overflow: auto; /*Overflow determina para que caso as informações ultrapassem o espaço da caixa os elementos apareçam rolando dentro da caixa*/
 }
 aside {
+    /*gambiarrazinha para manter os tipos a certa distância da sprite do pokemon*/
     position: relative;
 }
 .tipo{

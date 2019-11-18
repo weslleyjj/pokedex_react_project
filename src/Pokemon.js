@@ -1,3 +1,5 @@
+/*classe simples para exibição na tela de detalhes primária*/
+
 class Pokemon {
     constructor(data) {
       this.id = data.id;

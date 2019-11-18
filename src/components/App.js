@@ -11,18 +11,18 @@ class App extends Component {
 			pokemon: {}
 		};
 
-		this.handleOnClick = this.handleOnClick.bind(this);
+		this.handleOnClick = this.handleOnClick.bind(this); /*função que irá cuidar do evento de clique do usuário nas celulas dos pokemons*/
 	}
 
 	handleOnClick(id) {
-		fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
+		fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`) /*Ao clique do usuario irá determinar o id específico do pokemon para atribuir ao objeto pokemon simples*/
 			.then(res => res.json())
 			.then(data => {
 				const pokemon = new Pokemon(data);
 				this.setState({ pokemon });
 			})
 			.catch(err => console.log(err));
-		document.getElementById("detalhes").style.display = "none";
+		document.getElementById("detalhes").style.display = "none"; /*função para esconder a div de detalhes caso o usuário selecione outro pokemon*/
 	}
 
 	render() {
